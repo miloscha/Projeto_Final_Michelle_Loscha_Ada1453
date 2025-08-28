@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="formulário de compra de livros infantis">
+    <meta name="keywords" content="formulário, venda, compra, livro, infantil, diário de um banana">
+    <meta name="author" content="Michelle Loscha">
+    <title>Formulario de compra</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div><img src="Logo.png" alt="Logo da marca vendo livros" width="300"></div>
+    </header>
+
+    <nav>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Detalhes_dos_produtos.html">Detalhes dos Produtos</a>
+                <ul>
+                    <li><a href="sinopse10.html">Diario de um Banana 10</a></li>
+                    <li><a href="sinopse11.html">Diario de um Banana 11</a></li>
+                    <li><a href="sinopse19.html">Diario de um Banana 19</a></li>
+                </ul>
+            </li>
+            <li><a href="Formulario_de_compra.html">Formulário de Compra</a></li>
+            <li><a href="#final-da-pagina">Fim da Página</a></li>
+        </ul>
+    </nav>
+    <div class="conteudo">
+        <aside>
+            <p>Essa página está sendo criada durante o curso de Frontend oferecido pelo Programa Caixaverso.</p>
+            <br>
+            <p>O projeto abrange a aplicação de recursos de HTML e CSS aprendidos nas aulas ao vivo da ADA.</p>
+            <br>
+            <p>Os produtos e preços oferecidos são fictícios.</p>
+            <br>
+            <p>A ideia do "Vendo Livros" é dar início ao esboço da página que disponibilizará para venda os livros
+                escritos pelo meu filho de 9 anos.</p>
+            <br>
+            <p>A logo foi criada com recursos de IA.</p>
+            <br>
+            <p>Em breve os títulos serão atualizados!</p>
+        </aside>
+        <main>
+            <h1>Formulário de Compra</h1>
+            <br>
+            <form class="formulario" action="">
+                <ul class="lista-de-preenchimento">
+                    <li>
+                        <label for="nome">Nome</label><br>
+                        <input type="text" id="nome" placeholder="Digite seu nome" required>
+                    </li>
+                    <li> <label for="email">E-mail</label><br>
+                        <input type="email" id="e-mail" placeholder="Digite seu e-mail" required>
+                    </li>
+                    <li> <label for="telefone">Telefone</label><br>
+                        <input type="(00) 0000-0000" id="telefone" placeholder="(00) 0000-0000" required>
+                    </li>
+                    <li> <label for="cep">CEP</label> <br>
+                        <input type="texto" id="cep" placeholder="00.000-000" required>
+                    </li>
+                    <li> <label for="livro">Livro</label><br>
+                        <select name="Selecione o título" id="Livro">
+                            <option value="Diário de um Banana 10">Diário de um Banana 10</option>
+                            <option value="Diário de um Banana 11">Diário de um Banana 11</option>
+                            <option value="Diário de um Banana 19">Diário de um Banana 19</option>
+                        </select>
+                        <br>
+                        <br>
+                    <li><button type="reset">Limpar dados</button></li><br>
+                    <li><button type="submit">Enviar</button></li>
+                </ul>
+            </form>
+            <br>
+            <p>Um consultor entrará em contato para envio dos dados para pagamento em até 48 horas.</p>
+        </main>
+    </div>
+    <footer>
+        <p id="final-da-pagina"> Desenvolvido por Michelle Loscha.</p>
+    </footer>
+</body>
+
+</html>

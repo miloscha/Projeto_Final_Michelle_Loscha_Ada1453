@@ -1,0 +1,241 @@
+* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0
+}
+
+body {
+    padding: 10px;
+}
+
+header {
+    font-size: 18px;
+    text-align: center;
+    background-color: beige;
+    border-radius: 5px;
+    padding: 10px 5px 20px 5px;
+    color: darkolivegreen
+}
+
+nav {
+    background-color: rgb(236, 156, 136);
+    font-size: 19px;
+    border-radius: 5px;
+    padding: 5px 5px;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.menu li {
+    padding: 5px;
+    position: relative;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: beige;
+}
+
+.menu li a:hover {
+    text-decoration: underline;
+}
+
+.menu li ul {
+    display: none;
+    list-style: none;
+    position: absolute;
+    background-color: rgb(236, 156, 136);
+    color: beige;
+    font-size: 18px;
+}
+
+.menu li:hover ul {
+    display: block
+}
+
+.conteudo {
+    display: flex;
+}
+
+aside {
+    font-size: 17px;
+    background-color: rgb(188, 224, 166);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    width: 25%;
+    font-style: italic;
+    padding: 20px 10px;
+
+}
+
+aside p {
+    color: darkolivegreen
+}
+
+main {
+    background-color: rgb(184, 213, 238);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width: 75%;
+    padding: 10px 10px;
+    color: rgb(58, 32, 32);
+}
+
+@media (max-width: 768px) {
+    .conteudo {
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    aside,
+    main,
+    header,
+    nav,
+    footer {
+        width: 100%
+    }
+
+}
+
+@media (max-width: 738px) {
+    main {
+        order: -1;
+    }
+
+}
+
+@media (max-width: 738px) {
+
+    header,
+    nav,
+    aside,
+    main,
+    footer {
+        border-radius: 0px;
+    }
+}
+
+.titulos {
+    display: flex;
+    flex-direction: column;
+    padding: 05px;
+    list-style: none;
+}
+
+.titulos li {
+    list-style: none;
+}
+
+.item {
+    padding: 10px 0px 10px 0px;
+    margin-bottom: 10px;
+    background-color: beige;
+    border-radius: 5px;
+}
+
+.nome {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 2px;
+}
+
+.capa {
+    position: relative;
+    display: inline-block;
+}
+
+.textoimg {
+    position: absolute;
+    bottom: 10px;
+    left: 50px;
+    color: aliceblue;
+}
+
+.capa {
+    width: 200px;
+}
+
+.autor {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.capa:hover .textoimg {
+    display: block;
+    text-decoration: underline;
+    text-decoration-style: solid;
+    background-color: darkblue;
+    font-weight: bold;
+}
+
+.preço {
+    font-size: 20px;
+    margin-top: 2px;
+}
+
+main table {
+    border-style: groove;
+    background-color: beige;
+    margin: 20px;
+    width: 80%;
+}
+
+th {
+    background-color: rgb(188, 224, 166);
+}
+
+th,
+td {
+    padding: 10px;
+}
+
+.formulario {
+    background-color: beige;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.lista-de-preenchimento {
+    list-style: none;
+}
+
+input,
+select {
+    margin-bottom: 8px;
+    width: 60%;
+    border-radius: 3px;
+    border: solid #ddd;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: gainsboro;
+    width: 20%;
+    padding: 8px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #0056b3;
+    color: white;
+}
+
+
+footer {
+    font-size: 15px;
+    background-color: beige;
+    border-radius: 3px;
+    padding: 10px 10px;
+    text-align: center;
+    color: darkolivegreen;
+}
